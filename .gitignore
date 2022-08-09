@@ -7,3 +7,6 @@ HELP.md
 .mvn/
 target/
 .settings/
+.idea
+
+*/**/*.iml

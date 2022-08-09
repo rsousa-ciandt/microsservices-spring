@@ -12,7 +12,7 @@ import com.ricardo.hrworker.repositories.WorkerRepository;
 
 @RestController
 @RequestMapping("/workers")
-public class WrokerController {
+public class WorkerController {
 	
 	@Autowired
 	private WorkerRepository workerRepository;

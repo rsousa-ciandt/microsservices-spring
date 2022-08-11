@@ -6,9 +6,9 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableEurekaClient
-@EnableFeignClients
-@EnableCircuitBreaker
+@EnableEurekaClient // torna a aplicação como um cliente do eureka
+@EnableFeignClients // habilita a comunição com clientes feign
+@EnableCircuitBreaker // habilita as "implementações de Circuit Brakers"
 @SpringBootApplication
 public class HrPayrollApplication {
 

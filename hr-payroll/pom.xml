@@ -27,10 +27,13 @@
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
+		<!-- dependência do eureka client-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+
+		<!-- dependência do hystrix-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
@@ -52,6 +55,7 @@
 		</plugins>
 	</build>
 
+	<!-- bloco necessário para gerenciamento da dependência do spring cloud -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

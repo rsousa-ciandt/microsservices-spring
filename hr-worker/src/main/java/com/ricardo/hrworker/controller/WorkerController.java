@@ -38,6 +38,7 @@ public class WorkerController {
 //			throw new RuntimeException(e);
 //		}
 
+		// log apenas para testar o balanceamento de carga
 		logger.info("\nWorker Service - Port: " + env.getProperty("local.server.port"));
 
 		return ResponseEntity.ok(workerRepository.findById(id).get());

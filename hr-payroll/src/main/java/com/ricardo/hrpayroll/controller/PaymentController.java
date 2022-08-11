@@ -19,6 +19,9 @@ public class PaymentController {
 	@Autowired
 	private PaymentService payment;	
 
+	// Essa annotation marca o seguinte método como uma "implementação de Circuit Braker".
+	// Quer dizer que poderá haver problemas na comunicação dos serviços, ex a queda de um serviço.
+	// Em caso de falha, o método mencionado no "fallbackMethod" irá ser acionado para redirecionar o fluxo
 	@HystrixCommand(fallbackMethod = "getPaymentAlternative")
 	@GetMapping("/{id}/{days}")
 	public ResponseEntity<Payment> get(@PathVariable int id, @PathVariable int days) {

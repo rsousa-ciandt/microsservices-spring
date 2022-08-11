@@ -18,6 +18,8 @@
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 	</properties>
 	<dependencies>
+
+		<!-- dependência do eureka server-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
@@ -33,6 +35,8 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<!-- bloco necessário para gerenciamento da dependência do spring cloud -->
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
